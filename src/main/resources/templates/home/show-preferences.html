@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show-preferences</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Show preferences</h1>
+
+<div class="form-container" th:if="${vacationPreferences !=null}">
+    <p>Name: <span th:text="${vacationPreferences.name}"></span></p>
+    <p>Keywords: <span th:text="${vacationPreferences.keywords}"></span></p>
+    <p>Destination: <span th:text="${vacationPreferences.destination}"></span></p>
+    <p>Type of Travel: <span th:text="${vacationPreferences.typeOfTravel}"></span></p>
+    <p>Additional Features: <span th:text="${vacationPreferences.additionalFeatures}"></span></p>
+</div>
+</body>
+</html>

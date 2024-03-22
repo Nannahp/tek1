@@ -1,0 +1,76 @@
+html{
+    background-color: lightblue;
+
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Set at 50% of the page width */
+    transform: translateX(-50%); /* Takes the length of the text into account */
+}
+
+.form-container {
+    position: absolute;
+    top: 30%;
+    left: 50%; /* Set at 50% of the page width */
+    transform: translateX(-50%); /* Takes the length of the text into account */
+}
+table {
+    margin: 0 auto;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #dddddd;
+    border-collapse: collapse; /* Collapse the borders so adjacent cells share borders */
+    background-color: darksalmon;
+}
+
+/* Apply styles to table headers */
+thead {
+    align-content: center;
+    color: #dddddd;
+    font-size: 22px;
+    font-family: Forte;
+    border: 1px solid #dddddd; /* Set border */
+    padding: 8px; /* Add padding around the content */
+    text-align: left; /* Align text to the left */
+}
+
+/* Apply styles to table cells */
+td {
+    border: 1px solid #dddddd; /* Set border */
+    padding: 8px; /* Add padding around the content */
+    text-align: left; /* Align text to the left */
+    color: #dddddd;
+    font-family: Forte;
+}
+
+/* Style for the navigation bar */
+nav {
+    position: absolute; /* Position the navigation bar absolutely */
+    top: 0; /* Align it to the top of the page */
+    right: 100px; /* Align it to the right of the page */
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none; /* Hide the dropdown content by default */
+    position: absolute; /* Position it absolutely */
+    background-color: #f9f9f9; /* Background color */
+    min-width: 100px; /* Set a minimum width */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Add a box shadow */
+    z-index: 1; /* Set a higher z-index to display it above other content */
+}
+
+/* Style for the dropdown links */
+.dropdown-content a {
+    color: black; /* Text color */
+    padding: 12px 16px; /* Padding */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Display as block */
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

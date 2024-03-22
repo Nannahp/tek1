@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formular</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>FormularFerier</h1>
+
+<form class=form-container action="/show-preferences" method="post">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name"> <br> <br>
+
+    <label for="keywords">Keywords: </label> <br>
+    <textarea id="keywords" name="keywords" rows="4" cols="50"></textarea>
+    <br> <br>
+
+    <label for="destination">Destination:</label>
+    <select id="destination" name="destination">
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="newYork">NewYork</option>
+    </select>
+    <br>
+    <br>
+
+    <label>Type of travel:</label><br>
+    <input type="radio" id="vacation" name="typeOfTravel" value="valaction">
+    <label for="vacation">Vacation</label><br>
+    <input type="radio" id="business" name="typeOfTravel" value="business">
+    <label for="business">Business</label><br>
+    <input type="radio" id="adventure" name="typeOfTravel" value="adventure">
+    <label for="adventure">Adventure</label>
+    <br>
+    <br>
+
+    <label>Additional features: </label><br>
+    <input type="checkbox" id="wifi" name="additionalFeatures" value="wifi">
+    <label for="wifi">Wi-fi</label><br>
+    <input type="checkbox" id="breakfast" name="additionalFeatures" value="breakfast">
+    <label for="breakfast">Breakfast</label><br>
+    <input type="checkbox" id="transport"  name="additionalFeatures" value="transport">
+    <label for="transport">Transport</label>
+    <br>
+    <br>
+
+    <input type="submit" value="Send">
+
+</form>
+</body>
+</html>
